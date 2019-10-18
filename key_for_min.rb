@@ -2,9 +2,10 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
+ smallest_value = 0
  empty_hash = nil
  name_hash.inject do |name, value|
-  if value <= 1
+  if smallest_value == 0 || value < smallest_value
     return name
   end
  end
