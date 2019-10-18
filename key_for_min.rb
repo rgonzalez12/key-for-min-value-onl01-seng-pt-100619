@@ -4,7 +4,8 @@
 def key_for_min_value(name_hash)
  empty_hash = nil
  name_hash.inject do |name, value|
-   
+  if value ==
+    return name
   end
  empty_hash
 end
